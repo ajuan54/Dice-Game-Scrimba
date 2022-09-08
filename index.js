@@ -23,7 +23,11 @@ function showResetButton() {
 
 /* Hook up a click event listener to the Roll Dice Button. */
  rollBtn.addEventListener("click", function() {
-    
+     /* ==================================================== */
+     /* The random number must be here, inside the function. */
+    let randomNumber1 = Math.floor(Math.random() * 6) + 1
+    let randomNumber2 = Math.floor(Math.random() * 6) + 1;
+     /* ==================================================== */
     
     let randomDiceImage1 = "dice" + randomNumber1 + ".png"; 
     let randomDiceImage2 = "dice" + randomNumber2 + ".png";
